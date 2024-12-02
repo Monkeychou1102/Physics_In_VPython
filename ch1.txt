@@ -1,0 +1,15 @@
+from vpython import*
+
+ball=sphere(pos = vector(-10, 0, 0), radius = 0.5, color = color.cyan)
+
+t = 0       # Initial time
+dt = 0.001  # Time step 
+v = 5
+
+while t <= 2:
+	rate(1000)
+	ball.pos.x = ball.pos.x + v*dt
+	t = t + dt
+	
+	
+ball.pos.x     # Check ball position in x
